@@ -1,21 +1,17 @@
 import random
-
-min = 1 
+min = 1
 max = 1000
-empty_list = ()
 quantity = int(input("Введіть число : "))
 
-#def get_numbers_ticket(min, max, quantity):
+def get_numbers_ticket(min, max, quantity):
+    if min > quantity or max < quantity:
+        return []
+
 
 numbers = random.randint(min, max) 
 for i in range(quantity):
     numbers = random.randint(min, max)
     print(numbers)
-    
-
-
-
-
 
 
 
